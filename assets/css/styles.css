@@ -1,0 +1,429 @@
+/*! ===========================================================
+    Theme Name:     Melissa's Portfolio Theme
+    Updated:        1/20/2024 with Bootstrap v5.3.2
+    URL:            https://m33-melissa.github.io/Portfolio/
+    Description:    Theme for Melissa's Portfolio Website
+    Author:         Melissa Lim
+    Version:        1.0.0
+    Text Domain:    GitHub
+=============================================================== */
+/* =========================================================
+   Variables
+========================================================= */
+/* Colors */
+/* Fonts */
+/*! =========================================================
+    Main Style
+========================================================== */
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+.material-symbols-rounded {
+  font-size: 2rem;
+}
+
+.background {
+  position: absolute;
+  top: 0rem;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.btn-primary {
+  border: 3px solid #4F518C;
+  color: #4F518C;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: transparent;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-primary:hover {
+  background-color: #4F518C;
+  border: 3px solid #4F518C;
+}
+
+.btn-secondary {
+  border: 3px solid #6D696A;
+  color: #6D696A;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: transparent;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-secondary:hover {
+  background-color: #6D696A;
+  border: 3px solid #6D696A;
+}
+
+/* ==========================================================
+ * Hero Section
+========================================================== */
+#hero {
+  width: 100%;
+  height: 80vh;
+  margin: 10vh 0;
+  position: relative;
+  background: #FFF;
+  border-radius: 2rem;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 992px) {
+  #hero {
+    padding-left: 160px;
+  }
+}
+#hero h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #6D696A;
+}
+
+#hero p {
+  color: #6D696A;
+  margin: 1rem 0 3rem;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #4F518C;
+  letter-spacing: 1px;
+}
+
+#hero .social-links {
+  margin-top: 30px;
+}
+
+#hero .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #6D696A;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: #4F518C;
+}
+
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+#particles-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ==========================================================
+ * General Sections
+========================================================== */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #6D696A;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 140px;
+  height: 1px;
+  left: calc(50% - 70px);
+  bottom: 1px;
+  background: #a09c9d;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  left: calc(50% - 25px);
+  bottom: 0;
+  background: #6fc5d5;
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* ==========================================================
+ * About Section
+========================================================== */
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #6D696A;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.about .content ul strong {
+  margin-right: 10px;
+}
+.about .content ul .material-symbols-rounded {
+  color: #4F518C;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================
+ * Contact Section (Footer)
+========================================================== */
+footer {
+  height: 100vh;
+}
+footer .info {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .info .social-links a {
+  font-size: 1.8rem;
+}
+footer .info .social-links .material-symbols-rounded {
+  position: relative;
+  top: 0.6rem;
+}
+
+/*! =========================================================
+    Navigation Menu
+========================================================== */
+/* ==========================================================
+ * Header
+========================================================== */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  #header {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+  }
+}
+@media (min-width: 991px) {
+  #main {
+    margin-left: 100px;
+  }
+}
+/* ==========================================================
+ * Desktop Navigation 
+========================================================== */
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #6D696A;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #f2f3f5;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+.nav-menu a .material-symbols-rounded,
+.nav-menu a:focus .material-symbols-rounded {
+  font-size: 24px;
+}
+.nav-menu a span:nth-child(2),
+.nav-menu a:focus span:nth-child(2) {
+  padding: 0 5px 0 7px;
+  color: #6D696A;
+}
+
+@media (min-width: 992px) {
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 60px;
+  }
+  .nav-menu a span:nth-child(2),
+  .nav-menu a:focus span:nth-child(2) {
+    display: none;
+    color: #FFF;
+  }
+}
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  color: #FFF;
+  background: #4F518C;
+  font-weight: 600;
+}
+.nav-menu a:hover span:nth-child(2),
+.nav-menu .active span:nth-child(2),
+.nav-menu .active:focus span:nth-child(2),
+.nav-menu li:hover > a span:nth-child(2) {
+  color: #FFF;
+}
+
+.nav-menu a:hover,
+.nav-menu li:hover > a {
+  width: 100%;
+  color: #FFF;
+}
+.nav-menu a:hover span:nth-child(2),
+.nav-menu li:hover > a span:nth-child(2) {
+  display: block;
+}
+
+/* ==========================================================
+ * Mobile Navigation 
+========================================================== */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+.mobile-nav-toggle .material-symbols-rounded {
+  color: #6D696A;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+.mobile-nav-active #header {
+  left: 0;
+}
+.mobile-nav-active .mobile-nav-toggle {
+  color: #FFF;
+  background-color: #4F518C;
+}
+
+/*! =========================================================
+    Resume
+========================================================== */
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #6D696A;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #4F518C;
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #4F518C;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume .resume-item p {
+  padding-left: 15px;
+}
+.resume .resume-item ul {
+  padding-left: 30px;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #FFF;
+  border: 2px solid #4F518C;
+}/*# sourceMappingURL=styles.css.map */
