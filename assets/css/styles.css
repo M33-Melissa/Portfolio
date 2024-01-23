@@ -397,7 +397,7 @@ footer .info a {
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
   color: #FFF;
-  background: #4F518C;
+  background: #6668a8;
   font-weight: 600;
 }
 .nav-menu a:hover span:nth-child(2),
@@ -405,6 +405,12 @@ footer .info a {
 .nav-menu .active:focus span:nth-child(2),
 .nav-menu li:hover > a span:nth-child(2) {
   color: #FFF;
+}
+.nav-menu a:hover.home-nav,
+.nav-menu .active.home-nav,
+.nav-menu .active:focus.home-nav,
+.nav-menu li:hover > a.home-nav {
+  background-color: #3d3e6b;
 }
 
 .nav-menu a:hover,

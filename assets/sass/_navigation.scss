@@ -85,11 +85,15 @@
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
     color: $white;
-    background: $primary;
+    background: lighten($primary, 10%);
     font-weight: 600;
 
     span:nth-child(2) {
         color: $white;
+    }
+
+    &.home-nav {
+        background-color: darken($primary, 10%);
     }
 }
 
