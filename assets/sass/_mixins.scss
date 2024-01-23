@@ -1,0 +1,7 @@
+/* =========================================================
+   Mixins
+========================================================= */
+
+@mixin default-box-shadow($x-offset: 3px, $y-offset: 3px, $blur: 0, $spread-radius: 0, $color: rgba($black, 0.2)) {
+    box-shadow: $x-offset $y-offset $blur $spread-radius $color;
+}

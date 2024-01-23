@@ -90,8 +90,7 @@
      */
     on('click', '.mobile-nav-toggle', function (e) {
         select('body').classList.toggle('mobile-nav-active')
-        this.classList.toggle('bi-list')
-        this.classList.toggle('bi-x')
+        this.classList.toggle('open')
     })
 
     /**
@@ -105,8 +104,7 @@
             if (body.classList.contains('mobile-nav-active')) {
                 body.classList.remove('mobile-nav-active')
                 let navbarToggle = select('.mobile-nav-toggle')
-                navbarToggle.classList.toggle('bi-list')
-                navbarToggle.classList.toggle('bi-x')
+                navbarToggle.classList.toggle('open')
             }
             scrollto(this.hash)
         }
@@ -148,7 +146,7 @@
             backDelay: 2000
         });
     }
-    
+
     /**
      * Porfolio isotope and filter
      */
@@ -159,9 +157,9 @@
                 itemSelector: '.portfolio-item'
             });
 
-            let portfolioFilters = select('#portfolio-flters li', true);
+            let portfolioFilters = select('#portfolio-filters li', true);
 
-            on('click', '#portfolio-flters li', function (e) {
+            on('click', '#portfolio-filters li', function (e) {
                 e.preventDefault();
                 portfolioFilters.forEach(function (el) {
                     el.classList.remove('filter-active');
@@ -178,6 +176,23 @@
         }
 
     });
+
+    /**
+     * Initiate portfolio lightbox 
+     */
+    const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+    });
+
+    /**
+     * Initiate portfolio details lightbox 
+     */
+    const portfolioDetailsLightbox = GLightbox({
+        selector: '.portfolio-details-lightbox',
+        width: '90%',
+        height: '90vh'
+    });
+    
 
     /**
      * Animation on scroll

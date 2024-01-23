@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- Libraries CSS Files -->
-    <link href="assets/libraries/aos/aos.css" rel="stylesheet">
+    <link href="assets/libraries/aos/aos.css" rel="stylesheet">     <!-- Scroll Reveal Animation -->
+    <link href="assets/libraries/glightbox/glightbox.min.css" rel="stylesheet">     <!-- Lightbox -->
 
     <!-- Main Custom CSS File -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -37,214 +38,230 @@
         </nav><!-- .nav-menu -->
     </header><!-- End Header -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-        <div class="container" data-aos="fade-up">
+    <div class="container" id="content" tabindex="-1">
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume">
+            <div class="container" data-aos="fade-up">
 
-            <div class="section-title">
-                <h2>Resume</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div>
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>A front-end web developer with 4&nbsp;years of experience developing user-centered websites, who is passionate about various of artforms and eager to learn more.</p>
+                </div>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Sumary</h3>
-                    <div class="resume-item pb-0">
-                        <h4>Melissa Lim</h4>
-                        <p><em>Enthusiastic web developer with 4&nbsp;years of experience developing user-centered websites from initial concept to final, polished deliverable.</em></p>
-                        <ul>
-                            <li>Montréal, QC, Canada</li>
-                            <li>+1 (514) 451-3855</li>
-                            <li>melissa_lim_17@hotmail.com</li>
-                            <li>French, English</li>
-                        </ul>
-                    </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Sumary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Melissa Lim</h4>
+                            <ul>
+                                <li>Montréal, QC, Canada</li>
+                                <li>+1 (514) 451-3855</li>
+                                <li>melissa_lim_17@hotmail.com</li>
+                                <li>French, English</li>
+                            </ul>
+                        </div>
 
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>Bachelor of Fine Arts (BFA)</h4>
-                        <h5><em>Specialization in Computation Arts with Minor in Computer Science</em></h5>
-                        <h5>2017 - 2021</h5>
-                        <p><em>Concordia University, Montréal, QC</em></p>
-                        <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Bachelor of Fine Arts (BFA)</h4>
+                            <h5><em>Specialization in Computation Arts with Minor in Computer Science</em></h5>
+                            <h5>2017 - 2021</h5>
+                            <p><em>Concordia University, Montréal, QC</em></p>
+                            <ul>
+                                <li>3D Production (Blender)</li>
+                                <li>Video Game Development (Unity)</li>
+                                <li>Graphic Design (Adobe InDesign)</li>
+                                <li>Video Editing (Adobe After Effects)</li>
+                                <li>Creative Computation (p5.js JavaScript Library)</li>
+                                <li>Web Programming (HTML, CSS)</li>
+                                <li>Interactive Installations (Projection Mapping, Sculpture)</li>
+                                <li>Tangible Media (Arduino, Wearable technologies)</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Additional Coursework</h4>
+                            <h5><em>Biochemistry</em></h5>
+                            <h5>2014 - 2016</h5>
+                            <p><em>Concordia University, Montréal, QC</em></p>
+                            <ul>
+                                <li>Laboratory Manipulations</li>
+                                <li>Laboratory Reports (Graphs and Data Analysis)</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Diplôme d'études collégiales (DEC)</h4>
+                            <h5><em>Pure and Applied Sciences</em></h5>
+                            <h5>2011 - 2013</h5>
+                            <p><em>Cégep de Maisonneuve, Montréal, QC</em></p>
+                        </div>
                     </div>
-                    <div class="resume-item">
-                        <h4>Additional Coursework</h4>
-                        <h5><em>Biochemistry</em></h5>
-                        <h5>2014 - 2016</h5>
-                        <p><em>Concordia University, Montréal, QC</em></p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Diplôme d'études collégiales (DEC)</h4>
-                        <h5><em>Pure and Applied Sciences</em></h5>
-                        <h5>2011 - 2013</h5>
-                        <p><em>Cégep de Maisonneuve, Montréal, QC</em></p>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Agente de soutien numérique</h4>
+                            <h5>2021 - Present</h5>
+                            <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
+                            <ul>
+                                <li>Front-end development and multimedia integration of online learning ressources on Moodle and WordPress.</li>
+                                <li>Video editing and animations using Vyond, Adobe After Effects, and Adobe Premiere Pro.</li>
+                                <li>Website Theme Creation with an UI/UX Web Design using HTML5, SASS, jQuery, and PHP.</li>
+                                <li>Integration of Innovative Exercices for an Interactive Learning Experience. (Custom WordPress Add-ons and H5P)</li>
+                                <li>Graphics Editing, Adjusted to the Web Platform.</li>
+                                <li>Responsive Web Development with Awareness of WCAG 2.0, W3C Recommendations of Accessibility Guidelines</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Stagière en soutien numérique</h4>
+                            <h5>2020 - 2021</h5>
+                            <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
+                            <ul>
+                                <li>Introduction to Web Development in an Educational Context</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Vinyl Printing Production</h4>
+                            <h5>2019 - 2020</h5>
+                            <p><em>Block Bindings & Interlinings Ltd., Montréal, QC</em></p>
+                            <ul>
+                                <li>Assist in the pipeline of vinyl printing on clothes</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Career Exploration Internship</h4>
+                            <h5>2010</h5>
+                            <p><em>SAP Labs, Montréal, QC</em></p>
+                            <ul>
+                                <li>Introduction to web design and mobile applications</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Agente de soutien numérique</h4>
-                        <h5>2021 - Present</h5>
-                        <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
-                        <ul>
-                            <li>Front-end development and multimedia integration of online learning on Moodle and WordPress.</li>
-                            <li>Video editing and animations using Vyond, Adobe After Effects, and Adobe Premiere Pro.</li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Projects</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Ubisoft Game Lab Competition</h4>
+                            <h5><em>Interuniversity video game development competition</em></h5>
+                            <h5>2020</h5>
+                            <p><em>Concordia University, Montréal, QC</em></p>
+                            <p><em>Game Name: Rock 'n' Moles</em></p>
+                            <ul>
+                                <li>3D Modeling, Rigging, and Animating of Characters and Assets</li>
+                                <li>3D Rendering of a Scene Composition</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Ubisoft Game Lab Competition</h4>
+                            <h5><em>Interuniversity video game development competition</em></h5>
+                            <h5>2019</h5>
+                            <p><em>Concordia University, Montréal, QC</em></p>
+                            <p><em>Game name: Fastened Furious</em></p>
+                            <ul>
+                                <li>Working in a team of 8 to create a game with8in 3 months</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Game Jams</h4>
+                            <h5>2017 - 2022</h5>
+                            <p><em><a href="https://sampc.itch.io/duality-of-a-nuclear-lizard" target="_blank">Duality of a Nuclear Lizard</a>, <a href="https://melissalim.itch.io/the-living-squirrel" target="_blank">The Living Squirrel</a>, <a href="https://polocapt.itch.io/mistakes-were-made" target="_blank">Mistakes were made</a>, <a href="https://melissalim.itch.io/cat-detective-a-fishy-case">Cat detective: A Fishy Case</a></em></p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Website Portfolio</h4>
+                            <h5>2023</h5>
+                            <p><em><a href="https://m33-melissa.github.io/Portfolio/index.html">https://m33-melissa.github.io/Portfolio/index.html</a></em></p>
+                            <ul>
+                                <li>Web Development in a time crunch (3 days of production)</li>
+                                <li>Developed with Bootstrap Framework</li>
+                                <li>Using GitHub for Version History</li>
+                                <li>Using Libraries for the Scroll Reveal Animation (<a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a>), the Lightbox (<a href="https://biati-digital.github.io/glightbox/" target="_blank">glightbox</a>), the Particles Animation (<a href="https://vincentgarreau.com/particles.js/" target="_blank">particles.js</a>), and Gallery Sorting and Filtering (<a href="https://isotope.metafizzy.co/" target="_blank">Isotope</a>)</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resume-item">
-                        <h4>Stagière en soutien numérique</h4>
-                        <h5>2020 - 2021</h5>
-                        <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Vinyl Printing Production</h4>
-                        <h5>2019 - 2020</h5>
-                        <p><em>Block Bindings & Interlinings Ltd., Montréal, QC</em></p>
-                        <ul>
-                            <li>Assist in the pipeline of vinyl printing on clothes</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Career Exploration Internship</h4>
-                        <h5>2010</h5>
-                        <p><em>SAP Labs, Montréal, QC</em></p>
-                        <ul>
-                            <li>Introduction to web design and mobile applications</li>
-                        </ul>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Agente de soutien numérique</h4>
+                            <h5>2021 - Present</h5>
+                            <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
+                            <ul>
+                                <li>Front-end development and multimedia integration of online learning on Moodle and WordPress.</li>
+                                <li>Video editing and animations using Vyond, Adobe After Effects, and Adobe Premiere Pro.</li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Stagière en soutien numérique</h4>
+                            <h5>2020 - 2021</h5>
+                            <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Vinyl Printing Production</h4>
+                            <h5>2019 - 2020</h5>
+                            <p><em>Block Bindings & Interlinings Ltd., Montréal, QC</em></p>
+                            <ul>
+                                <li>Assist in the pipeline of vinyl printing on clothes</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Career Exploration Internship</h4>
+                            <h5>2010</h5>
+                            <p><em>SAP Labs, Montréal, QC</em></p>
+                            <ul>
+                                <li>Introduction to web design and mobile applications</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Projects</h3>
-                    <div class="resume-item pb-0">
-                        <h4>Ubisoft Game Lab Competition</h4>
-                        <h5><em>Interuniversity video game development competition</em></h5>
-                        <h5>2020</h5>
-                        <p><em>Concordia University, Montréal, QC</em></p>
-                        <p><em>Game name: Rock 'n' Moles</em></p>
-                        <ul>
-                            <li></li>
-                            <li>3D Modeling of characters, tools, and environment assets</li>
-                            <li>3D Texturing and Animation</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Ubisoft Game Lab Competition</h4>
-                        <h5><em>Interuniversity video game development competition</em></h5>
-                        <h5>2019</h5>
-                        <p><em>Concordia University, Montréal, QC</em></p>
-                        <p><em>Game name: Fastened Furious</em></p>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Game Jams</h4>
-                        <h5>2017 - 2022</h5>
-                        <p><em><a href="https://sampc.itch.io/duality-of-a-nuclear-lizard" target="_blank">Duality of a Nuclear Lizard</a>, <a href="https://melissalim.itch.io/the-living-squirrel" target="_blank">The Living Squirrel</a>, <a href="https://polocapt.itch.io/mistakes-were-made" target="_blank" >Mistakes were made</a>, <a href="https://melissalim.itch.io/cat-detective-a-fishy-case">Cat detective: A Fishy Case</a></em></p>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Agente de soutien numérique</h4>
-                        <h5>2021 - Present</h5>
-                        <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
-                        <ul>
-                            <li>Front-end development and multimedia integration of online learning on Moodle and WordPress.</li>
-                            <li>Video editing and animations using Vyond, Adobe After Effects, and Adobe Premiere Pro.</li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Stagière en soutien numérique</h4>
-                        <h5>2020 - 2021</h5>
-                        <p><em>Société de formation à distance des commissions scolaires du Québec (SOFAD), Montréal, QC</em></p>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Vinyl Printing Production</h4>
-                        <h5>2019 - 2020</h5>
-                        <p><em>Block Bindings & Interlinings Ltd., Montréal, QC</em></p>
-                        <ul>
-                            <li>Assist in the pipeline of vinyl printing on clothes</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Career Exploration Internship</h4>
-                        <h5>2010</h5>
-                        <p><em>SAP Labs, Montréal, QC</em></p>
-                        <ul>
-                            <li>Introduction to web design and mobile applications</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section><!-- End Resume Section -->
-    
+        </section><!-- End Resume Section -->
+    </div>
+
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
         <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Skills</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-          </div>
-          <div class="row skills-content">
-            <div class="col-lg-6">
-              <div class="progress">
-                <span class="skill">HTML</span>
-              </div>
-              <div class="progress">
-                <span class="skill">CSS</span>
-              </div>
-              <div class="progress">
-                <span class="skill">JavaScript</span>
-              </div>
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>Intermediate to Advanced Proficiency in the following:</p>
             </div>
-            <div class="col-lg-6">
-              <div class="progress">
-                <span class="skill">PHP</span>
-              </div>
-              <div class="progress">
-                <span class="skill">WordPress/CMS</span>
-              </div>
-              <div class="progress">
-                <span class="skill">Photoshop</span>
-              </div>
+            <div class="row skills-content">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><span class="material-symbols-rounded">chevron_right</span> Web development: HTML5, SASS, JQuery, Bootstrap, Foundation, Accessibility (WCAG, W3C), Responsive Web Design</li>
+                        <li><span class="material-symbols-rounded">chevron_right</span> WordPress/CMS</li>
+                        <li><span class="material-symbols-rounded">chevron_right</span> Adobe Creative Suite: Illustrator, After Effects, Premiere Pro, Photoshop</li>
+                        <li><span class="material-symbols-rounded">chevron_right</span> Microsoft Office Suite: Word, Excel, PowerPoint</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li><span class="material-symbols-rounded">chevron_right</span> Programming Languages: Java, C++, JavaScript, PHP</li>
+                        <li><span class="material-symbols-rounded">chevron_right</span> Game Development: Unity</li>
+                        <li><span class="material-symbols-rounded">chevron_right</span> 3D Computer Graphics: Blender, Rhino, Substance Painter</li>
+                        <li><span class="material-symbols-rounded">chevron_right</span> Video Editing and Animation</li>
+                        <li><span class="material-symbols-rounded">chevron_right</span> Clip Studio Paint</li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </section><!-- End Skills Section -->
+    </section><!-- End Skills Section -->
     </div>
 </body>
 
@@ -258,52 +275,61 @@
 
                 <div class="section-title">
                     <h2>Contact</h2>
+                    <h3 class="mt-5">Melissa Lim</h3>
                 </div>
 
                 <div class="info">
-                    <div class="address">
-                        <i class="bi bi-geo-alt"></i>
-                        <h4>Location:</h4>
-                        <p>Montréal, QC, Canada.</p>
-                    </div>
-
-                    <div class="email">
-                        <i class="bi bi-envelope"></i>
+                    <div class="phone">
+                        <i class="bi bi-phone"></i>
                         <h4>Email:</h4>
                         <p>melissa_lim_17@hotmail.com</p>
                     </div>
-
                     <div class="phone">
                         <i class="bi bi-phone"></i>
                         <h4>Call:</h4>
                         <p>+1 (514) 451-3855</p>
                     </div>
+                    <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Location:</h4>
+                        <p>Montréal, QC, Canada</p>
+                    </div>
 
                     <div class="social-links">
                         <h4>Links:</h4>
-                        <a href="mailto:melissa_lim_17@hotmail.com"><span class="material-symbols-rounded">alternate_email</span></a>
-                        <a href="https://github.com/M33-Melissa" class="github" target="_blank"><svg width="29" viewBox="0 0 98 96" height="30" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#6c757d" />
-                            </svg></a>
-                        <a href="https://www.linkedin.com/in/chour-melissa-lim/" class="linkedin" target="_blank">
-                            <?xml version="1.0" ?><svg height="30" viewBox="0 0 72 72" width="30" xmlns="http://www.w3.org/2000/svg">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#6c757d" />
-                                    <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF" />
-                                </g>
-                            </svg>
-                        </a>
+                        <p><a href="mailto:melissa_lim_17@hotmail.com"><span class="material-symbols-rounded">alternate_email</span></a><a href="https://www.linkedin.com/in/chour-melissa-lim/" class="linkedin" target="_blank">
+                                <?xml version="1.0" ?><svg height="30" viewBox="0 0 72 72" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path class="edit-color" d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#0d6efd" />
+                                        <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF" />
+                                    </g>
+                                </svg>
+                            </a><a href="https://sketchfab.com/MelissaLim" target="_blank"><svg width="30 " viewBox="0 0 2000 2000" height="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m1000 69c-515.52 0-933.28 417.84-933.28 933.24s417.76 933.29 933.28 933.29 933.36-417.89 933.36-933.29-417.84-933.24-933.36-933.24z" fill="#fff" />
+                                    <path class="edit-color" d="m1000 0c-552.32 0-1000 447.72-1000 1000s447.68 1000 1000 1000 1000-447.72 1000-1000-447.6-1000-1000-1000zm-86.88 1595.07-431.12-248.86v-502l431.12 232.79zm76.8-636.19-510.08-270.38 510.08-294.5 510.16 294.5zm510.48 388.29-429.52 248v-516.17l429.52-232z" fill="#0d6efd" />
+                                </svg></a><a href="https://github.com/M33-Melissa" class="github" target="_blank"><svg width="29" viewBox="0 0 98 96" height="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="edit-color" fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#0d6efd" />
+                                </svg></a><a href="https://melissalim.itch.io/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="33" viewBox="0 0 245.371 220.736">
+                                    <path class="edit-color" d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08C57.534 94.073 72.867 94.073 76.7 94.073zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z" color="#0d6efd" fill="#0d6efd" />
+                                </svg></a></p>
+                    </div>
+                    <div class="pages">
+                        <h4>Sections:</h4>
+                        <p class="btn-row"><a class="btn link" href="index.html">Home</a><a class="btn link" href="index.html#about">About</a><a class="btn link" href="index.html#portfolio">Portfolio</a><a class="btn link" href="#">Resume</a></p>
                     </div>
                 </div>
-                <div class="">
-                </div>
-                <p>©<script>document.write(new Date().getFullYear());</script> Designed and developped by Melissa Lim</p>
+                <p>©&nbsp;<script>document.write(new Date().getFullYear());</script> Designed and developed by Melissa Lim</p>
             </div>
         </section><!-- End Contact Section -->
     </div>
-    <!-- Libraries JS Files -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="assets/libraries/aos/aos.js"></script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><span class="material-symbols-rounded">arrow_upward</span></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     <!-- Bootstrap -->
+    <script src="assets/libraries/aos/aos.js"></script>     <!-- Scroll Reveal Animation -->
+    <script src="assets/libraries/glightbox/glightbox.min.js"></script>     <!-- Lightbox -->
+    <script src="assets/libraries/js/isotope.pkgd.min.js"></script>     <!-- Sorting and Filtering Gallery -->
+    <script src="assets/libraries/js/particles.min.js"></script>     <!-- Particles Animation -->
 
     <!-- Main Custom JS File -->
     <script src="assets\js\main.js"></script>

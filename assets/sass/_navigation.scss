@@ -20,8 +20,8 @@
 @media (max-width: 991px) {
     #header {
         width: 300px;
-        background: #fff;
-        border-right: 1px solid #e6e9ec;
+        background: $white;
+        border-right: 1px solid lighten($secondary, 40%);
         left: -300px;
     }
 }
@@ -63,12 +63,12 @@
     transition: 0.3s;
     font-size: 15px;
     border-radius: 50px;
-    background: #f2f3f5;
+    background: $off-white;
     height: 60px;
     width: 100%;
     overflow: hidden;
     transition: 0.3s;
-    box-shadow: 3px 3px rgba($black, 0.2);
+    @include default-box-shadow();
 
     .material-symbols-rounded {
         font-size: 24px;
@@ -80,18 +80,6 @@
     }
 }
 
-@media (min-width: 992px) {
-    .nav-menu a,
-    .nav-menu a:focus {
-        width: 60px;
-
-        span:nth-child(2) {
-            display: none;
-            color: $white;
-        }
-    }
-}
-
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
@@ -99,6 +87,7 @@
     color: $white;
     background: $primary;
     font-weight: 600;
+
     span:nth-child(2) {
         color: $white;
     }
@@ -108,8 +97,22 @@
 .nav-menu li:hover>a {
     width: 100%;
     color: $white;
+
     span:nth-child(2) {
         display: block;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .nav-menu a,
+    .nav-menu a:focus {
+        width: 60px;
+
+        span:nth-child(2) {
+            display: none;
+            color: $white;
+        }
     }
 }
 
@@ -134,7 +137,13 @@
     padding: 5px;
 
     .material-symbols-rounded {
-        color: $secondary;
+        &.close-icon {
+            color: $white;
+        }
+
+        &.open-icon {
+            color: $secondary;
+        }
     }
 }
 
@@ -144,8 +153,45 @@
     #header {
         left: 0;
     }
+
     .mobile-nav-toggle {
         color: $white;
         background-color: $primary;
+    }
+}
+
+/* ==========================================================
+ * Back to top button
+========================================================== */
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: $primary;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    color: transparent;
+
+    .material-symbols-rounded {
+        font-size: 28px;
+        color: $white;
+        line-height: 0;
+    }
+
+    &:hover {
+        background: darken($primary, 10%);
+        color: transparent;
+        @include default-box-shadow();
+    }
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
     }
 }
