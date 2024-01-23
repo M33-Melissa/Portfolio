@@ -112,6 +112,14 @@
   display: block;
 }
 
+[data-aos][data-aos][data-aos-delay="100"].aos-animate, body[data-aos-delay="100"] [data-aos].aos-animate {
+  transition-delay: 0s;
+}
+
+[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 0.6s;
+}
+
 /* ==========================================================
  * Hero Section
 ========================================================== */
@@ -223,6 +231,20 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+}
+
+.next-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+.next-section .material-symbols-rounded {
+  border-radius: 2rem;
+  background: #4F518C;
+  color: #FFF;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+}
+.next-section .material-symbols-rounded:hover {
+  background: #3d3e6b;
 }
 
 /* ==========================================================
